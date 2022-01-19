@@ -1,7 +1,12 @@
 @extends('layouts.main')
 
 @section('main-content')
-    @foreach ($comics as $comic)
+
+<section class="main-home background-main-home">
+
+    <div class="container">
+
+        @foreach ($comics as $comic)
 
         <div class="container-card">
 
@@ -12,5 +17,13 @@
 
         </div>
 
-    @endforeach
+        @endforeach
+
+        <div class="button-more">
+
+            <button>Load more</button>
+        </div>
+    </div>
+
+</section>
 @endsection

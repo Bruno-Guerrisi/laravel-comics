@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 .container {
   max-width: 1180px;
   margin: auto;
@@ -5,16 +12,22 @@
 
 img {
   max-width: 100%;
+  height: 100%;
 }
 
 header {
-  margin-bottom: 30px;
   background-color: white;
-  height: 60px;
+  height: 100px;
 }
 header .main-header {
   display: flex;
   align-items: center;
+  height: 100%;
+}
+header .main-header a {
+  height: 100%;
+  margin-right: 30px;
+  padding: 10px 0;
 }
 header .main-header nav {
   height: 100%;
@@ -32,5 +45,100 @@ header .main-header nav ul li a {
   text-decoration: none;
   color: black;
   height: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+header .main-header nav ul li a:first-of-type {
+  margin-right: 10px;
+}
+header .main-header nav ul li a.active {
+  border-bottom: 3px solid #0182f9;
+}
+
+.main-home {
+  padding: 30px 0;
+  border-bottom: 15px solid #0182f9;
+}
+.main-home.background-main-home {
+  background-color: #1c1c1c;
+}
+.main-home .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-home .container .container-card {
+  width: 16.6666666667%;
+  padding: 20px;
+}
+.main-home .container .container-card .card {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+.main-home .container .container-card .card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 10px;
+}
+.main-home .container .button-more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-home .container .button-more button {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: white;
+  background-color: #0182f9;
+  border: none;
+}
+
+.main-news {
+  padding: 30px 0;
+}
+.main-news.background-main-home {
+  background-color: #1c1c1c;
+}
+.main-news .container h2 {
+  color: white;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.main-footer button {
+  border: 2px solid #0182f9;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.main-footer .social {
+  display: flex;
+  align-items: center;
+}
+.main-footer .social span {
+  width: 100%;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0182f9;
+}
+.main-footer .social img {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #303030;
 }
