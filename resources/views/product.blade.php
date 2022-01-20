@@ -6,7 +6,15 @@
 
     <div class="background-main-product">
         
-        
+        <div class="container container-product">
+
+            <div class="container-poster">
+
+                <img class="img-poster" src="{{ $product['thumb'] }}" alt="">
+                <span class="view-1">comic book</span>
+                <span class="view-2">view gallery</span>
+            </div>
+        </div>
     </div>
 
     <div class="container container-product">
@@ -32,7 +40,7 @@
 
                 <div class="price-right">
                     <div>
-                        Check Availability <i class="fas fa-caret-down freccia-di-cazzu"></i>
+                        Check Availability <i class="fas fa-caret-down arrow-down"></i>
                     </div>
                 </div>
             </div>
@@ -42,7 +50,7 @@
             </p>
         </div>
 
-        <div class="rigt">
+        <div class="right">
             <span>
                 adverteisement
             </span>
