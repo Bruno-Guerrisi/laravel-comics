@@ -1,0 +1,88 @@
+
+.main-product{
+
+    .background-main-product{
+        background-image: url(../images/jumbotron.jpg);
+        height: 350px;
+        width: 100%;
+        background-position: top;
+        background-size: cover;
+        border-bottom: 45px solid #0182f9;
+    }
+
+    .container.container-product{
+        padding: 60px 80px;
+
+        display: flex;
+
+        .left{
+            width: 60%;
+
+            .title{
+                text-transform: uppercase;
+                color: #14405d;
+                margin-bottom: 10px;
+            }
+
+            .price-avaiable{
+                display: flex;
+                align-items: center;
+                background-color: #55ba58;
+                border: 1px solid #3d8841;
+                margin-bottom: 20px;
+
+                .price-left{
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    color: #9be579;
+                    border-right: 1px solid #3d8841;
+
+                    .color-price{
+                        color: white;
+                    }
+
+                    .avaiable{
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+                }
+
+                .price-right{
+                    width: 30%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 10px;
+                    color: white;
+
+                    div{
+                        display: flex;
+                        align-items: center;
+
+                        .freccia-di-cazzu{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 7px;
+                        }
+                    }
+
+                }
+            }
+
+            .description{
+                color: #494949;
+            }
+        }
+
+        .right{
+            width: 40%;
+            
+        }
+
+    }
+
+}

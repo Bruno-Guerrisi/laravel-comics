@@ -6,14 +6,16 @@
 
     <div class="container">
 
-        @foreach ($comics as $comic)
+        @foreach ($comics as $id => $comic)
 
         <div class="container-card">
 
-            <div class="card">
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                <h3>{{ $comic['title'] }}</h3>
-            </div>
+            <a class="get-product" href="{{ route( 'product', [ 'id' => $id ] ) }}">
+                <div class="card">
+                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                    <h3>{{ $comic['series'] }}</h3>
+                </div>
+            </a>
 
         </div>
 
